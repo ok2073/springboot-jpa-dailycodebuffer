@@ -43,5 +43,9 @@ public class Teacher {
     )*/
     private List<Course> courses;
 
+    @Override
+    public String toString() {
+        return String.format("Teacher [firstName=%s, lastName=%s, totalCourses=%d]", firstName, lastName, courses.size());
+    }
 
 }

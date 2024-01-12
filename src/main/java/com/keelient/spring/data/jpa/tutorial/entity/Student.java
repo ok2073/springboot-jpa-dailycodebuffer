@@ -6,6 +6,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.Set;
+
 @Entity
 @Data
 @AllArgsConstructor
@@ -39,5 +41,8 @@ public class Student {
 
     @Embedded
     private Guardian guardian;
+
+    @ManyToMany(mappedBy = "students")
+    private Set<Course> courses;
 
 }
