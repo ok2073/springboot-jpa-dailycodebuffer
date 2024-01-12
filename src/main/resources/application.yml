@@ -1,0 +1,17 @@
+server:
+  port: 8082
+
+spring:
+  output:
+    ansi:
+      enabled: ALWAYS
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3333/schooldb
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
